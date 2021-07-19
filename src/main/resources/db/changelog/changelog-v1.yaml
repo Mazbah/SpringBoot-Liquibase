@@ -1,0 +1,58 @@
+---
+databaseChangeLog:
+  - changeSet:
+      id: 1000121
+      author: Mazbah
+
+      changes:
+        - delete:
+            schemaName: liquibase
+            tableName: st
+            where: level='C'
+#
+#        - createTable:
+#            tableName: studen
+#            columns:
+#              - column:
+#                  name: id
+#                  type: bigint
+#                  autoIncrement: true
+#                  constraints:
+#                    primaryKey: true
+#                    nullable: false
+#              - column:
+#                  name: name
+#                  type: varchar(255)
+#                  constraints:
+#                    nullable: false
+#                    unique: false
+#              - column:
+#                  name: school
+#                  type: varchar(512)
+#                  constraints:
+#                    nullable: false
+#                    unique: false
+#              - column:
+#                  name: address
+#                  type: varchar(255)
+#                  constraints:
+#                    nullable: true
+#                    unique: true
+#              - column:
+#                  name: level
+#                  type: varchar(255)
+#                  constraints:
+#                    nullable: true
+#                    unique: false
+#              - column:
+#                  name: amount
+#                  type: bigint
+#                  constraints:
+#                    nullable: true
+#                    unique: false
+#              - delete:
+#                  name: amount
+#                  type: bigint
+#                  constraints:
+#                    nullable: true
+#                    unique: false

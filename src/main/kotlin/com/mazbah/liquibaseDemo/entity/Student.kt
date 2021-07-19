@@ -3,7 +3,7 @@ package com.mazbah.liquibaseDemo.entity
 import javax.persistence.*
 
 @Entity
-@Table(name = "student")
+@Table(name = "st")
 data class Student (
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY) @Column(name = "id") var id: Long? = null,
     @Column(name = "name") var name: String? = null,
