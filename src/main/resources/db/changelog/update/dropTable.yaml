@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id:  droptable
+      author:  Mazbah
+      changes:
+        -  dropTable:
+             cascadeConstraints:  true
+             schemaName: liquibase
+             tableName: student

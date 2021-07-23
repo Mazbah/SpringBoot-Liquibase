@@ -1,17 +1,43 @@
 ---
 databaseChangeLog:
   - changeSet:
-      id: 1000121
+      id: updateColumn
       author: Mazbah
-
       changes:
-        - delete:
+        - update:
+            columns:
+              - column:
+                  name: address
+                  value: full_address
             schemaName: liquibase
             tableName: st
-            where: level='C'
+
+
+#        - delete:
+#            schemaName: liquibase
+#            tableName: st
+#            where: level='C'
+#
+#        - update:
+#            columns:
+##              catalogName:  liquibase
+#            - column:
+#                name: address
+#                value: full_address
+#              schemaName: liquibase
+#              tableName: st
+#              where: directLevel='B'
+
+#        - renameColumn:
+#            columnDataType: varchar(255)
+#            newColumnName: directLevel
+#            oldColumnName: level
+#            remarks: A String
+#            schemaName: liquibase
+#            tableName: st
 #
 #        - createTable:
-#            tableName: studen
+#            tableName: stu
 #            columns:
 #              - column:
 #                  name: id

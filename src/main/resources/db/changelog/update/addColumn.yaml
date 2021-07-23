@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: addColumn
+      author: Mazbah
+      changes:
+        - addColumn:
+            schemaName: liquibase
+            tableName: st
+            columns:
+              - column:
+                  name: phone_no
+                  type: bigint
+                  constraints:
+                    nullable: true
+                    unique: false

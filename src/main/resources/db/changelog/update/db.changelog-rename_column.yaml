@@ -1,0 +1,14 @@
+---
+databaseChangeLog:
+  - changeSet:
+      id:  drop_column
+      author:  Mazbah
+      changes:
+        - dropColumn:
+            schemaName: liquibase
+            tableName: st
+    #        columnName: amou
+            columns:
+            - column:
+               name: school
+

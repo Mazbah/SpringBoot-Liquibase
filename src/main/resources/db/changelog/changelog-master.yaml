@@ -2,3 +2,15 @@ databaseChangeLog:
   - include:
       file: /changelog-v1.yaml
       relativeToChangelogFile: true
+
+  - include:
+      file: update/db.changelog-rename_column.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: update/addColumn.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: update/dropTable.yaml
+      relativeToChangelogFile: true
